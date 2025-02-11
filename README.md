@@ -1,2 +1,1 @@
-# Task
-Dynamic display of form data which is displayed in the format of table
+This project is related to dynamically displaying form data in a table format. The technologies used are HTML, CSS, and JavaScript.
