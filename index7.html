@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Display The Form Data in JSON Format</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Open Form</h2>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create</button>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Form</h4>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="emp_id" class="form-label">ID</label>
+            <input type="number" class="form-control" id="emp_id" required>
+            <span class="error-message text-danger" id="emp_id_error"></span>
+          </div>
+          <div class="mb-3">
+            <label for="emp_name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="emp_name" required>
+            <span class="error-message text-danger" id="emp_name_error"></span>
+          </div>
+          <div class="mb-3">
+            <label for="emp_email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="emp_email" required>
+            <span class="error-message text-danger" id="emp_email_error"></span>
+          </div>
+          <!-- <div class="mb-3">
+            <label for="emp_photo" class="form-label">Photo</label>
+            <input type="file" class="form-control" id="emp_photo" accept="image/*">
+            <span class="error-message text-danger" id="emp_photo_error"></span>
+          </div> -->
+          <button type="button" class="btn btn-primary" id="savebtn">Save</button> 
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <h2>Employee Details</h2>
+  <table class="table table-bordered" id="tablestruct">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <!-- <th>Photo</th> -->
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+
+</body>
+<script src="script7.js"></script>
+</html>
